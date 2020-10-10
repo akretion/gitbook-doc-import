@@ -28,7 +28,7 @@ Para importar esses objetos do tipo _Título_, ir no menu _Contatos &gt; Configu
 
 Seguir as etapas que vimos [na introdução](./#criacao-do-external-id-durante-a-importacao) para realizar a importação de _Marcadores_.
 
-![](.gitbook/assets/image%20%288%29.png)
+![](.gitbook/assets/image%20%2833%29.png)
 
 ### Lista de preços
 
