@@ -69,9 +69,16 @@ Apesar do título da coluna ser "id", é uma cadeia de caracteres, então é a c
 
 ## Criação do _External ID_ durante a importação
 
-Um bom hábito para facilitar o processo de importação é de você **escolher/escrever os próprios External ID dos objetos que você está importando**. Desta maneira quando precisar importar outros tipos de objetos relacionados com os primeiros, você já conhecerá os External ID de referencias deles. E assim importar o mesmo registro de forma sucessiva vai apenas atualizar o registro identificado pelo External ID em vez de criar um novo registro.
+Para facilitar o processo de importação é muito recomendado \(se não for obrigatório\) você **escolher/escrever os próprios External ID dos objetos que você está importando**. Isso tem várias vantagens :
 
-**Se você estiver importando dados de um outro sistema/ERP, é muito indicado de colocar o ID do registro  do banco de dados do outro sistema dentro desse esternal ID.** Assim você tem garantia que ser único e facilita depois se você precisa replicar relações entre registros como você tinha no seu outro sistema.
+* Se precisar importar os mesmos objetos várias vezes, eles serão apenas **atualizados** \(reconhecidos pelo External ID\) e não criados em duplo.
+* Quando importar outros tipos de objetos, você vai poder **criar relações** com esses primeiros objetos importados, citando o External ID deles.
+
+{% hint style="info" %}
+Se você estiver importando dados de um outro sistema/ERP, é muito indicado de **colocar o ID do registro do banco de dados do outro sistema dentro desse External ID**.
+
+Isso dá a garantia que esse External ID escolhido será único e permite identificar o objeto original no banco de dado anterior para cada objeto importado.
+{% endhint %}
 
 Por exemplo, se eu importar alguns _Marcadores_ com o seguinte arquivo Excel :
 
