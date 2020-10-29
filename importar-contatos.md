@@ -324,7 +324,7 @@ Segue uma lista dos campos interessantes para uma importação de Contatos com t
   </tbody>
 </table>
 
-##  Importação posteriores aos contatos
+## Importação posteriores aos contatos
 
 É necessário importar **depois** dos _Contatos_ todos os objetos que precisam estar ligados a um _Contato_, como por exemplo as _Contas Bancárias_ :
 
